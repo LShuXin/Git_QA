@@ -4,7 +4,6 @@
 
 ## 1. Failed to connect to raw.githubusercontent.com port 443
 
-
 **方法一（推荐）**
 直接在命令行中输入
 
@@ -98,3 +97,23 @@ git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 ` git remote set-url origin https://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@github.com/github的用户名/仓库名称`
 
 最后提交 直接输入： `git push`     
+
+
+## 4. git pull 之后本地代码被覆盖解决方案
+
+**前提条件：**本地之前commit过
+
+**解决方案：**
+
+```
+git reflog
+```
+
+![](7.png)
+
+```
+git reset --hard  93c7150
+```
+
+  
+
