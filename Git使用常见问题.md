@@ -15,14 +15,21 @@
 
 **方法二**
 
-- 修改Hosts文件，首先查询真实IP, 在https://www.ipaddress.com 查询raw.githubusercontent.com 的真实IP
+- 修改Hosts文件，首先查询真实IP, 在https://www.ipaddress.com 查询真实IP
 
-- 然后修改Hosts文件, 在终端输入sudo vim /etc/hosts,在hosts文件中添加以下内容
+- 然后修改Hosts文件, 在终端输入sudo vim /etc/hosts, 在hosts文件中添加以下内容
 
 ```
-199.232.68.133(刚刚查到的ip) raw.githubusercontent.com
+140.82.114.4      github.com
+185.199.111.133   raw.githubusercontent.com
+185.199.108.153   assets-cdn.github.com
+185.199.110.153   assets-cdn.github.com
+185.199.111.153   assets-cdn.github.com
+151.101.1.6       github.global.ssl.fastly.net
+151.101.65.6      github.global.ssl.fastly.net
+151.101.129.6     github.global.ssl.fastly.net
+151.101.193.6     github.global.ssl.fastly.net
 ```
-
 
 
 ## 2.Failed to connect to github.com port 443 after 17992 ms: Operation timed out
